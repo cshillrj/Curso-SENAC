@@ -1,9 +1,17 @@
 body {
-    background: darkslategray;
+    background-image: linear-gradient(black, gray);
     color: white;
-    font: normal 14pt arial;
-    margin: 40px;
-    
+    font: normal 12pt arial;
+    margin: 40px;   
+}
+a{
+    margin-left: 10pt;
+    color: whitesmoke;
+}
+video{
+    margin: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
     
 }
 footer{
