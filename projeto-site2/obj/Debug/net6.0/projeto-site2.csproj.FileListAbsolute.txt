@@ -1,0 +1,15 @@
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\projeto-site2.exe
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\projeto-site2.deps.json
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\projeto-site2.runtimeconfig.json
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\projeto-site2.dll
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\ref\projeto-site2.dll
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\bin\Debug\net6.0\projeto-site2.pdb
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.csproj.AssemblyReference.cache
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.GeneratedMSBuildEditorConfig.editorconfig
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.AssemblyInfoInputs.cache
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.AssemblyInfo.cs
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.csproj.CoreCompileInputs.cache
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.dll
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\ref\projeto-site2.dll
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.pdb
+C:\MEUS ARQUIVOS\REPOSITÓRIOS\Curso-SENAC\projeto-site2\obj\Debug\net6.0\projeto-site2.genruntimeconfig.cache
