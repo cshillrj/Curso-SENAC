@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Notícias Da Hora</h1>
+        <form>
+            <input type="search" />
+            <input type="submit" value="Buscar" />
+        </form>
+    </header>
+    <main>
+        <nav id="menu-lateral">
+            <span>Navegue por categorias:</span>
+            <ul>
+                <li><a href="#">Cotidiano</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Comportamento</a></li>
+            </ul>
+        </nav>
+        <section id="destaques">
+            <h2>Destaques</h2>
+            <a href="noticia1.html">
+                <img src="imagens/futebol.png" alt="Bola de futebol no gramado" title="Futebol">
+                <h3>Com gol de França, São Paulo derrota o Santos no Morumbi</h3>             
+            </a>
+            <a href="noticia2.html">
+                <img src="imagens/ideias.png" alt="Ideias e tecnologia" title="Tecnologia">
+                <h3>As idéias inovadoras de oito profissionais geniais</h3>
+            </a>
+        </section>
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>Inscreva-se no nosso site</legend>
+                <ul>
+                    <li>
+                        <label for="txtNome">Nome</label>
+                         <input type="text" id="txtNome" name="nome" required />
+                    </li>
+                    <li>
+                        <label for="txtEmail">Email</label>
+                        <input type="email" id="txtEmail" name="email" required/>
+                    </li>
+                    <li>
+                        <label for="txtSenha">Senha</label>
+                        <input type="password" id="txtSenha" name="senha" required/>
+                    </li>
+                    <li>
+                        <label>Data de Nascimento</label>
+                        <input type="number" id="txtDia" name="nascimento-dia" min="1" max="31"/>
+                        <select id="selMes" name="nascimento-mes">
+                            <option value="1">Janeiro</option>
+                            <option value="2">Fevereiro</option>
+                            <option value="3">Março</option>
+                            <option value="4">Abril</option>
+                            <option value="5">Maio</option>
+                            <option value="6">Junho</option>
+                            <option value="7">Julho</option>
+                            <option value="8">Agosto</option>
+                            <option value="9">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                        <input type="number" id="txtAno" name="nascimento-ano"/>
+                    </li>
+                    <li>
+                        <label>Sexo</label>
+                        <label><input type="radio" name="genero" value="m"/>Masculino</label>
+                        <label><input type="radio" name="genero" value="f"/>Feminino</label>
+                    </li>
+                    <li>
+                        <label><input type="checkbox" id="chkOfertas"
+                            name="ofertas" />Desejo receber ofertas de sites parceiros</label>
+                                            </li>
+                </ul>
+                <input type="reset" value="Limpar" />
+                <input type="submit" value="Salvar" />
+               
+            </fieldset>   
+           
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Nascimento</th>
+                    <th>Gênero</th>
+                    <th>Aceita ofertas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fulano da Silva</td>
+                    <td>fulano@mail.com</td>
+                    <td>01/11/1980</td>
+                    <td>Masculino</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Ciclana da Silva</td>
+                    <td>ciclana@mail.com</td>
+                    <td>05/10/1974</td>
+                    <td>Feminino</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Beltrano da Silva</td>
+                    <td>beltrano@mail.com</td>
+                    <td>06/06/1995</td>
+                    <td>Masculino</td>
+                    <td>Não</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <span>Todos os direitos Reservados.  Contato (88) 11223-4455</span>
+    </footer>
+</body>
+</html>
