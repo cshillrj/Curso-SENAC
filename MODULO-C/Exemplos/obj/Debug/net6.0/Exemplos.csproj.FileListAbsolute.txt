@@ -1,0 +1,15 @@
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\Exemplos.exe
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\Exemplos.deps.json
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\Exemplos.runtimeconfig.json
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\Exemplos.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\ref\Exemplos.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\bin\Debug\net6.0\Exemplos.pdb
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.csproj.AssemblyReference.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.GeneratedMSBuildEditorConfig.editorconfig
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.AssemblyInfoInputs.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.AssemblyInfo.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.csproj.CoreCompileInputs.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\ref\Exemplos.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.pdb
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\Exemplos\obj\Debug\net6.0\Exemplos.genruntimeconfig.cache

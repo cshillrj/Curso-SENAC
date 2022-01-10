@@ -1,31 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace atividade1
+namespace ATIVIDADE1
 {
     class Program
     {
         static void Main(string[] args)
         {
-           double raio;
+            
 
+            string descricao;
+            double valor_unitario;
+            int quantidade;
+            char fim = 's';
 
-            Console.Write("Informe o valor do raio:");
-            raio = double.Parse(Console.ReadLine());
-            double total = Area(raio);
-            Console.WriteLine($"A área do círculo vale: {total} ");
-        }
+            do{
+                Console.Clear();
 
-           static double Quadrado(double numero)
-        {
-            double quadrado = numero * numero;
-            return quadrado;
-        }
+                Console.WriteLine("Informe a descrição do produto:");
+                descricao = Console.ReadLine();
 
-        static double Area(double raio)
-        {
-            double area = 3.14 * Quadrado(raio);
-            return area; 
+                Console.WriteLine("Digite o valor unitário: ");
+                valor_unitario = double.Parse(Console.ReadLine());
+
+                Console.WriteLine("Digite a quantidade: ");
+                quantidade = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Deseja inserir novo produto? s/n ");
+                fim = char.Parse(Console.ReadLine());
+
+            }while (fim == 's');
+             
         }
     }
 }
- 
+
+

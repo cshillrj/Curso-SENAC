@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\modulo-C.csproj",
+  "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\modulo-C.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,28 +16298,28 @@
   "RootNamespace": "modulo_C",
   "Documents": [
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\Views\\Home\\cadastro.cshtml",
+      "TargetPath": "Views\\Home\\cadastro.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\REPOSITÓRIOS\\Curso-SENAC\\Newsletter\\Views\\Home\\cadastro.cshtml",
-      "TargetPath": "Views\\Home\\cadastro.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\Newsletter\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
   ],
