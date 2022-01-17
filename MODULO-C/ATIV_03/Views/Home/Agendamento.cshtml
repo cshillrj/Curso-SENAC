@@ -1,0 +1,37 @@
+@model Dados
+
+@{
+    ViewData["Title"] = "Agendamento";
+}
+
+<div class = "Agenda">
+    <h1>Pré Agendamento:</h1>
+    <form method = "POST">
+        <p>
+            <label>Nome: </label>
+            <input class="desc" asp-for = "Nome" >
+        </p>
+        <p>
+            <label>Telefone: </label>
+            <input class="desc" asp-for = "Telefone">
+        </p>
+        <p>
+            <label>Data: </label>
+            <input class="data" asp-for = "Data">
+        </p>
+        <p>
+            <label>Animal: </label>
+            <input class="desc" asp-for = "Animal">
+        </p>
+        <p>
+            <label>Necessidade: </label>
+            <textarea asp-for="Necessidade" class="input-padrao" required cols="65" rows="5"></textarea>
+            <!--<input asp-for = "Necessidade" type = "text">  !--> 
+        </p>
+
+        <input class="botao" type = "submit" value = "Agendar">
+
+    </form>
+</div>
+
+<a class="conf" asp-area="" asp-controller="Home" asp-action="Confirmacao">Confirmar Agendamento</a>

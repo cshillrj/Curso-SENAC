@@ -1,0 +1,28 @@
+
+
+**************************Scripts SQL de criação de tabela “pre-agendamento”**********************************************
+
+CREATE TABLE Pre_Agendamento(
+	ID int(5) auto_increment,
+	Nome VARCHAR (200),
+	Telefone VARCHAR (15),
+	Data TIMESTAMP,
+	Animal VARCHAR (20),
+	Necessidade VARCHAR (2000),
+	Primary Key (ID)
+);
+
+__________________________________________________________________________________________________________________________
+
+****************************Scripts SQL de inclusão de um registro********************************************************
+
+INSERT INTO Pre_Agendamento(Nome, Telefone, Data, Animal, Necessidade) VALUES ('Cristiano', 
+'21-99629-2971', '2022-01-17', 'Cadela Pita', 'Consulta rotina');
+
+__________________________________________________________________________________________________________________________
+
+***************************Scripts SQL de seleção de todos os registros***************************************************
+
+SELECT * FROM Pre_Agendamento;
+
+__________________________________________________________________________________________________________________________

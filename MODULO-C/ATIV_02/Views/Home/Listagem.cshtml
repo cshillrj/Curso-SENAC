@@ -1,0 +1,33 @@
+@model List<ItemPedido>
+
+<h2>Listagem de Pedidos</h2>
+<table border = "2">
+    <thead>
+        <tr>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <th>Valor Unitário</th>
+        </tr>
+        <tr>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(ItemPedido item in Model)
+        {
+            <tr>
+                <td>@item.descricao</td>
+            </tr>
+            <tr>
+                <td>@item.valor_unitario</td>
+            </tr>
+            <tr>
+                <td>@item.quantidade</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>Total dos pedidos é: @Dados.PedidoAtual.TotalPedido().ToString("C") </p>
