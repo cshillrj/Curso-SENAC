@@ -1,0 +1,114 @@
+
+
+FASE 1
+
+CREATE DATABASE Super;
+
+CREATE TABLE Produtos(
+    idProduto int PRIMARY KEY AUTO_INCREMENT,
+    nomeProduto varchar(200),
+    valorProduto double(9,2),
+    quantidadeProduto int
+);
+
+___________________________________________________________________________________________________________________________
+
+
+FASE 2
+
+Select * from fornecedores;
+
+Select nomeProduto, valorProduto, quantidadeProduto from fornecedores;
+
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ('Leite integral', 2.00 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ('Pão de manteiga', 3.50 * 1.20, 125)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ('Cotonete', 2.50 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ('Arroz', 2.50 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ('Batata-branca', 1.90 * 1.20, 100)
+
+____________________________________________________________________________________________________________________________
+
+
+FASE 3
+
+CREATE TABLE funcionarios(
+    idFuncionario int PRIMARY KEY AUTO_INCREMENT,
+    nomeFuncionario varchar (200),
+    setorFuncionario varchar (80)
+);
+
+
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'atendente de padaria';
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'atendente de caixa';
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'repositor';
+
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ('João Paulo', 'Atendente de padaria');
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ('Adamastor Júnior', 'repositor');
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ('Ana Cláudia', 'Atendente de caixa');
+
+
+_______________________________________________________________________________________________________________________________
+
+
+FASE 4
+
+SELECT * FROM `selecionados` WHERE idcandidato <4;
+
+ALTER TABLE funcionarios ADD cpf VARCHAR(11);
+
+UPDATE funcionarios SET cpf = '00061690935' WHERE IdFuncionario = 1;
+
+UPDATE funcionarios SET cpf = '09865880935' WHERE IdFuncionario = 2;
+
+UPDATE funcionarios SET cpf = '45061690935' WHERE IdFuncionario = 3;
+
+
+__________________________________________________________________________________________________________________________
+
+
+FASE 5
+
+CREATE TABLE consumidor(
+ idConsumidor int PRIMARY KEY AUTO_INCREMENT,
+ tipoConsumidor varchar (80) 
+);
+
+
+CREATE TABLE venda(
+  idVenda int PRIMARY KEY AUTO_INCREMENT,
+  idConsumidor int,
+  valorTotalVenda double (9,2),
+  FOREIGN KEY (idConsumidor) REFERENCES consumidor(idConsumidor)
+);
+
+
+CREATE TABLE itens_vendidos(
+  idVenda int,
+  idProduto int,
+  quantidadeVendida int,
+  valorProduto double (9, 2),
+  valorTotalProduto double (9, 2),
+  PRIMARY KEY (idVenda, idProduto),
+  FOREIGN KEY (idVenda) REFERENCES venda (idVenda),
+  FOREIGN KEY (idProduto) REFERENCES produtos (idProduto)
+);
+
+INSERT INTO consumidor (idConsumidor, tipoConsumidor) VALUES (1, 'consumidor final')
+INSERT INTO consumidor (idConsumidor, tipoConsumidor) VALUES (2, 'consumidor final')
+
+INSERT INTO venda (idVenda, idConsumidor, valorTotalVenda) VALUES (1, 1, '24.00')
+INSERT INTO venda (idVenda, idConsumidor, valorTotalVenda) VALUES (2, 2, '30.00')
+
+INSERT INTO itens_vendidos (idVenda, idProduto, quantidadeVendida, valorProduto, valorTotalProduto) VALUES (1, 1, '10', '2.40', '24.00')
+INSERT INTO itens_vendidos (idVenda, idProduto, quantidadeVendida, valorProduto, valorTotalProduto) VALUES (2, 3, '10', '3.00', '30.00')
+
+
+SELECT SUM(valorTotalProduto) from itens_vendidos;

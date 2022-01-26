@@ -1,0 +1,78 @@
+
+create database super;
+use super;
+create table fornecedores(
+idfornecedor int(9) not null auto_increment primary key,
+nomeProduto varchar(200),
+valorProduto double (9,2),
+quantidadeProduto int(9),
+setor varchar (200));
+
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Leite integral',	2,100,'Padaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Pão de manteiga',3.5,125,'Padaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Manteiga',5.99,60,'Padaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Doce de morango',2.9, 50,'Padaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Queijo fatiado',18.9,60,'Padaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Desodorante',8.99,100,'Perfumaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Xampu',6.99,200,'Perfumaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Condicionador',8.9,50,'Perfumaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Sabonete',0.89,500,'Perfumaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Cotonete',2.5,100,'Perfumaria');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Batata-branca',1.9,100,'Hortifruti');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Tomate',	3.9,58,'Hortifruti');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Cebola roxa',2.99,50,'Hortifruti');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Abóbora',0.98,90,'Hortifruti');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Pimentão',5.99,60,'Hortifruti');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Arroz',2.5,200,'Alimentos');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Feijão',3.69,250,'Alimentos');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Farinha',2.19,500,'Alimentos');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Açúcar',	2.39,100,'Alimentos');
+insert into fornecedores(nomeProduto, valorProduto, quantidadeProduto, setor) values ('Óleo de soja',2.99,300,'Alimentos');
+
+create table candidatos (
+idcandidato int(9) not null auto_increment primary key,
+nome varchar(200),
+experiencia varchar (200));
+
+insert into candidatos (nome, experiencia) values ('João Paulo','Atendente de padaria');
+insert into candidatos (nome, experiencia) values ('Adamastor Júnior','Repositor');
+insert into candidatos (nome, experiencia) values ('Ana Cláudia','Atendente de caixa');
+insert into candidatos (nome, experiencia) values ('Daltron Silva','Mecânico de carros');
+insert into candidatos (nome, experiencia) values ('Tiel Evandro','Lavador de carros');
+insert into candidatos (nome, experiencia) values ('Amanda Carvalho','Atendente de caixa');
+insert into candidatos (nome, experiencia) values ('Clóvis Nogueira','Atendente de padaria');
+insert into candidatos (nome, experiencia) values ('Jorge Pereira','Coveiro');
+
+create table selecionados(
+idselecionado int(9) not null auto_increment primary key,
+idcandidato integer, CONSTRAINT candidatos FOREIGN KEY (idcandidato) REFERENCES candidatos (idcandidato),
+cpf varchar(11));
+
+insert into selecionados (idcandidato, cpf) values(1,'00061690935');
+insert into selecionados (idcandidato, cpf) values(2,'45061690935');
+insert into selecionados (idcandidato, cpf) values(3,'09865880935');
+insert into selecionados (idcandidato, cpf) values(4,'12348956365');
+insert into selecionados (idcandidato, cpf) values(5,'88896532535');
+insert into selecionados (idcandidato, cpf) values(6,'33256987525');
+insert into selecionados (idcandidato, cpf) values(7,'00235656565');
+insert into selecionados (idcandidato, cpf) values(8,'77785545855');
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+

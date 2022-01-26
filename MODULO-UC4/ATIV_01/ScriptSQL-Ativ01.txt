@@ -1,0 +1,321 @@
+
+
+FASE 1
+
+CREATE DATABASE Super;
+
+CREATE TABLE Produtos(
+    idProduto int PRIMARY KEY AUTO_INCREMENT,
+    nomeProduto varchar(200),
+    valorProduto double(9,2),
+    quantidadeProduto int
+);
+
+___________________________________________________________________________________________________________________________
+
+
+FASE 2
+
+Select * from fornecedores;
+
+Select nomeProduto, valorProduto, quantidadeProduto from fornecedores;
+
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ("Leite integral", 2.00 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ("Pão de manteiga", 3.50 * 1.20, 125)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ("Cotonete", 2.50 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ("Arroz", 2.50 * 1.20, 100)
+
+insert into Produtos (nomeProduto, valorProduto, quantidadeProduto) values ("Batata-branca", 1.90 * 1.20, 100)
+
+____________________________________________________________________________________________________________________________
+
+
+FASE 3
+
+CREATE TABLE funcionarios(
+    idFuncionario int PRIMARY KEY AUTO_INCREMENT,
+    nomeFuncionario varchar (200),
+    setorFuncionario varchar (80)
+);
+
+
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'atendente de padaria';
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'atendente de caixa';
+SELECT * FROM `candidatos` WHERE experiencia LIKE 'repositor';
+
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ("João Paulo", "Atendente de padaria");
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ("Adamastor Júnior", "repositor");
+
+insert into funcionarios (nomeFuncionario, setorFuncionario) values ("Ana Cláudia", "Atendente de caixa");
+
+
+_______________________________________________________________________________________________________________________________
+
+
+FASE 4
+
+SELECT * FROM `selecionados` WHERE idcandidato <4;
+
+ALTER TABLE funcionarios ADD cpf VARCHAR(11);
+
+UPDATE funcionarios SET cpf = '00061690935' WHERE IdFuncionario = 1;
+
+UPDATE funcionarios SET cpf = '09865880935' WHERE IdFuncionario = 2;
+
+UPDATE funcionarios SET cpf = '45061690935' WHERE IdFuncionario = 3;
+
+
+__________________________________________________________________________________________________________________________
+
+
+FASE 5
+
+CREATE TABLE consumidor(
+ idConsumidor int PRIMARY KEY AUTO_INCREMENT,
+ tipoConsumidor varchar (80) 
+);
+
+
+CREATE TABLE venda(
+  idVenda int PRIMARY KEY AUTO_INCREMENT,
+  idConsumidor int,
+  valorTotalVenda double (9,2),
+  FOREIGN KEY (idConsumidor) REFERENCES consumidor(idConsumidor)
+);
+
+
+CREATE TABLE itens_vendidos(
+  idVenda int,
+  idProduto int,
+  quantidadeVendida int,
+  valorProduto double (9, 2),
+  valorTotalProduto double (9, 2),
+  PRIMARY KEY (idVenda, idProduto),
+  FOREIGN KEY (idVenda) REFERENCES venda (idVenda),
+  FOREIGN KEY (idProduto) REFERENCES produtos (idProduto)
+);
+
+INSERT INTO consumidor (idConsumidor, tipoConsumidor) VALUES (1, 'consumidor final')
+INSERT INTO consumidor (idConsumidor, tipoConsumidor) VALUES (2, 'consumidor final')
+
+INSERT INTO venda (idVenda, idConsumidor, valorTotalVenda) VALUES (1, 1, '24.00')
+INSERT INTO venda (idVenda, idConsumidor, valorTotalVenda) VALUES (2, 2, '30.00')
+
+INSERT INTO itens_vendidos (idVenda, idProduto, quantidadeVendida, valorProduto, valorTotalProduto) VALUES (1, 1, '10', '2.40', '24.00')
+INSERT INTO itens_vendidos (idVenda, idProduto, quantidadeVendida, valorProduto, valorTotalProduto) VALUES (2, 3, '10', '3.00', '30.00')
+
+
+
+SELECT SUM(valorTotalProduto) from itens_vendidos;
+
+
+
+
+
+
+
+
+
+
+************************************************  EXEMPLOS  *************************************************
+CREATE DATABASE Treinamento;
+
+
+
+CREATE TABLE Pre_Agendamento(
+
+  Id int(4) AUTO_INCREMENT,
+
+  Nome varchar(200) NOT NULL,
+
+  DataNascimento Date,
+
+  DataCadastro DateTime,
+
+  Animal varchar(200),
+
+  Necessidade LongText,
+
+  PRIMARY Key (Id)
+
+);
+
+
+
+Alterar a minha estrutura:
+
+ALTER TABLE Pre_Agendamento ADD COLUMN Whatts varchar(50);
+
+ALTER TABLE Pre_Agendamento ADD COLUMN FAX varchar(30);
+
+
+
+Excluir uma coluna da tabela
+
+ALTER TABLE Pre_Agendamento DROP COLUMN FAX
+
+
+
+--------------------------------------------------------------------------------------
+
+DML -> Manulação de dados
+
+
+
+CRUD    SQL
+
+C create -> INSERT
+
+R read ->  SELECT
+
+U update -> update
+
+D delete -> delete
+
+
+
+INSERT INTO Pre_Agendamento (Nome,DataNascimento,DataCadastro,Animal,Necessidade) VALUES ('Luthiano','2000-12-25','2022-01-21 18:44:20','Cacau','Banho e Tosa');
+
+
+
+INSERT INTO Pre_Agendamento (Nome,DataNascimento,DataCadastro,Animal,Necessidade) VALUES ('Fabio Perasso','2000-01-01','2021-01-21 18:47:15','Perola','Vacinação');
+
+
+
+INSERT INTO Pre_Agendamento (Nome,DataNascimento,DataCadastro,Animal,Necessidade) VALUES ('Pedro SENAC','2019-11-30','2022-01-21 18:50:10','Zeus','Vacinação');
+
+
+
+SELECT * FROM Pre_Agendamento
+
+
+
+UPDATE Pre_Agendamento SET Whatts='51 99999' WHERE Id=2;
+
+UPDATE Pre_Agendamento SET Whatts='11 88888' WHERE Id=3;
+
+UPDATE Pre_Agendamento SET FAX='21 789' WHERE Id=1;
+
+
+
+DELETE FROM Pre_Agendamento WHERE Id=1
+
+
+
+REATE TABLE Pessoa(
+
+  Id int(4) AUTO_INCREMENT,
+
+  Nome Varchar(200),
+
+  Login VARCHAR(30),
+
+  Senha Varchar(30),
+
+  DataNascimento Date,
+
+  PRIMARY Key (Id)
+
+);
+
+
+
+INSERT INTO Pessoa (Nome,Login,Senha,DataNascimento) VALUES ('Luthiano','123','321','2000-12-25');
+
+INSERT INTO Pessoa (Nome,Login,Senha,DataNascimento) VALUES ('Roberto','robert','123456','1975-02-04');
+
+
+
+#################PRODUTO##########################
+
+CREATE TABLE Produto (
+
+  IdProduto int(4) AUTO_INCREMENT,
+
+  Nome Varchar(255) NOT NULL,
+
+  Valor Double (9,2),
+
+  CodigoBarra Varchar(30),
+
+  IdFuncionario int(4),
+
+  Primary Key(IdProduto),
+
+  FOREIGN Key(IdFuncionario) REFERENCES Pessoa(Id)
+
+);
+
+
+
+
+
+#################SERVICO##########################
+
+
+
+IdPessoa
+
+IdProduto
+
+DataSolicitacao
+
+Valor
+
+
+
+
+
+CREATE TABLE Servicos (
+
+	IdPessoa int(4),
+
+  IdProduto int (4),
+
+  DataSolicitacao Date,
+
+  Valor double(9,2),
+
+  PRIMARY Key(IdPessoa,IdProduto),
+
+  FOREIGN Key (IdPessoa) REFERENCES Pessoa(Id),
+
+  FOREIGN Key (IdProduto) REFERENCES Produto(IdProduto)
+
+);
+
+
+
+
+
+
+******************** EXEMPLO CRIAÇÃO DE FOREIGN KEY **********************************
+CREATE TABLE Produto(
+  IdProduto int (4) AUTO_INCREMENT,
+  Nome VARCHAR (255) NOT NULL,
+  Valor DOUBLE (9, 2),
+  CodigoBarra VARCHAR (30),
+  IdFuncionario INT (4),
+  PRIMARY Key (IdProduto),
+  FOREIGN Key(idFuncionario) REFERENCES Pessoa(id)
+);
+
+
+CREATE TABLE servicos(
+	IdPessoa int(4),
+	IdProduto int(4),
+	DataSolicitacao Date,
+	Valor double (9,2),
+	PRIMARY Key (IdPessoa, IdProduto),
+	FOREIGN Key (IdPessoa) REFERENCES Pessoa(Id),
+	FOREIGN Key (IdProduto) REFERENCES Produto(IdProduto)
+);
+
+
+
