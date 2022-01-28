@@ -30,24 +30,42 @@
 
     <main class="faleConosco">
         <form class="formaTabela">
-            <label for="nomesobrenome">Nome</label>
+            <label for="nomesobrenome">Nome e sobrenome</label>
             <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="cpf">CPF</label>
+            <input type="cpf" id="CPF" class="input-padrao" required placeholder="somente números">
     
             <label for="email">E-mail</label>
             <input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
     
             <label for="telefone">Telefone</label>
             <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+            <label for="dataNasc">Data de Nascimento</label>
+            <input type="date" id="dataNasc" class="input-padrao" required placeholder="xx/xx/xxxx">
+
+            <label for="endereco">Endereço</label>
+            <input type="address" id="endereco" class="input-padrao" required placeholder="Rua e número">
+            <input type="address" id="endereco" class="input-padrao">
             
-            <label for="mensagem">Sugestão / Reclamação / Elogio</label>
-            <textarea id="mensagem" class="input-padrao" required cols="70" rows="10"></textarea>
+            <label for="bairro">Bairro</label>
+            <input type="address" id="endereco" class="input-padrao" required>
+
+            <label for="cidade">Cidade</label>
+            <input type="address" id="endereco" class="input-padrao" required>
+
+            <label for="senha">Crie uma senha</label>
+            <input type="password" id="senha" class="input-padrao" required placeholder="8 dígitos">
+            
             <label class="checkbox"><input type="checkbox" checked required>Gostaria de receber nossas novidades por e-mail?</label>
             <input type="submit" value="Enviar" class="enviar">
         </form>
     </main>
-    
+
     <footer>
         <p class="copyright">&copy; Copyright Mangia Pizza - SENAC - Cristiano Hill - 2022.</p>
     </footer>
+    
 </body>
 </html>

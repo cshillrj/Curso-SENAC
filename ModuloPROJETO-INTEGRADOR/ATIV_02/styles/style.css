@@ -27,6 +27,22 @@ header{
     width: 12rem;
 }
 
+.cadastro{
+    display: flex;
+    justify-content: right;
+    padding-right: 40px;
+}
+
+.cadastro a{
+    font-size: 16px;
+}
+
+.cadastro a:hover{
+    font-size: 18px;
+    color: red;
+    transition: 0.5s;
+}
+
 .navbar .menu{
     display: flex;
     z-index: 1;
