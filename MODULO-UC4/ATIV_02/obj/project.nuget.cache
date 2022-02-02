@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+HdvvW172NGxXj1XmnvfhGPQF4PP2F5J97PoWZC3ZjpT9vPSNsSdfznq7R0STYR/o48ZLn2znvCaMw1bTnjYAA==",
+  "success": true,
+  "projectFilePath": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\ATIV_02.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crist\\.nuget\\packages\\mysqlconnector\\2.1.5\\mysqlconnector.2.1.5.nupkg.sha512",
+    "C:\\Users\\crist\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
