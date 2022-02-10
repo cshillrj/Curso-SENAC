@@ -37,3 +37,4 @@ C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\bin\Debug\netcoreapp3.1\System.D
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Lista.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\CadastroUsuario.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Atualizar.cshtml.g.cs

@@ -1,0 +1,30 @@
+@model List<Dados>
+
+
+<table class="table">
+        <thead>
+            <tr>
+                
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Mensagem</th>
+                
+            </tr>
+        </thead>
+
+            @foreach (Dados dados in Model)
+            {
+                <tr>
+                    
+                    <td>@dados.Nome</td>
+                    <td>@dados.Email</td>
+                    <td>@dados.Telefone</td>
+                    <td>@dados.Mensagem</td>
+                    
+                </tr>
+            }
+        <tbody>
+        
+        </tbody>
+    </table>

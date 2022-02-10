@@ -104,6 +104,7 @@ a {
     font-size: 14px;
     border-radius: 5px;
     border-color: rgb(207, 207, 207);
+    transition: 0.5s;
   }
 
   .Agenda textarea {
@@ -114,6 +115,7 @@ a {
   form .botao:hover {
     background: orange;
     font-size: 16px;
+    transition: 0.5s;
   }
 
   .conf:hover {

@@ -22,6 +22,42 @@ namespace ATIV_02.Controllers
             return View(lista);
         }
 
+        public IActionResult Excluir(int Id)
+        {
+            if(HttpContext.Session.GetInt32("Id") == null)
+                return RedirectToAction("Login");
+            UsuarioRepository ur = new UsuarioRepository();
+            Usuario usuarioEncontrado = ur.BuscarPorId(Id);
+            if(usuarioEncontrado.Id > 0)
+            {
+                ur.excluir(usuarioEncontrado);
+            }else{
+                ViewData["mensagem"] = "Usuário não encontrado.";
+            }
+
+            return RedirectToAction("Lista");
+
+        }
+
+        public IActionResult Atualizar(int Id)
+        {
+            if(HttpContext.Session.GetInt32("Id") == null)
+                return RedirectToAction("Login");
+            UsuarioRepository ur = new UsuarioRepository();
+            Usuario usuarioEncontrado = ur.BuscarPorId(Id);
+
+            return View(usuarioEncontrado);
+        }
+
+        [HttpPost]
+        public IActionResult Atualizar(Usuario usuario)
+        {
+            UsuarioRepository ur = new UsuarioRepository();
+            ur.atualizar(usuario);
+            
+            return RedirectToAction("Lista");
+        }
+
         public IActionResult CadastroUsuario()
         {
             if(HttpContext.Session.GetInt32("Id") == null)
@@ -30,11 +66,11 @@ namespace ATIV_02.Controllers
         }
 
         [HttpPost]
-        public IActionResult CadastroUsuario(Usuario u)
+        public IActionResult CadastroUsuario(Usuario user)
         {
             UsuarioRepository ur = new UsuarioRepository();
-            ur.Insert(u);
-            ViewBag.Mensagem = "Usuario Cadastrado com sucesso";
+            ur.Insert(user);
+            ViewData["mensagem"] = "Usuário cadastrado com sucesso.";
             return View();
         }
 
@@ -50,14 +86,14 @@ namespace ATIV_02.Controllers
             Usuario usuario = ur.QueryLogin(u);
             if(usuario != null)
             {
-                ViewBag.Mensagem = "Você está logado";
+                ViewData["mensagem"] = "Usuário logado com sucesso.";
                 HttpContext.Session.SetInt32("Id", usuario.Id);
                 HttpContext.Session.SetString("Nome", usuario.Nome);
                 return Redirect("CadastroUsuario");   
             }
             else
             {
-                ViewBag.Mensagem = "Falha no Login";
+                ViewData["mensagem"] = "Falha no Login.";
                 return View();
             }
         }

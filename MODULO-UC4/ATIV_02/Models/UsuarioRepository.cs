@@ -44,7 +44,52 @@ namespace ATIV_02.Models
             Conexao.Close();
         }
 
-        public Usuario QueryLogin(Usuario u)
+        public void atualizar(Usuario user)
+        {
+            MySqlConnection Conexao = new MySqlConnection(DadosConexao);
+
+            Conexao.Open();
+
+            String Query = "UPDATE Usuario SET Nome=@Nome, Login=@Login, Senha=@Senha, DataNasc=@DataNasc WHERE Id=@Id";
+
+            MySqlCommand comando = new MySqlCommand(Query, Conexao);
+
+            comando.Parameters.AddWithValue("@Nome", user.Nome);
+            comando.Parameters.AddWithValue("@Login", user.Login);
+            comando.Parameters.AddWithValue("@Senha", user.Senha);
+            comando.Parameters.AddWithValue("@DataNasc", user.DataNasc);
+            comando.Parameters.AddWithValue("@Id", user.Id);
+
+            comando.ExecuteNonQuery();
+
+            Conexao.Close();
+        }
+
+        public void excluir(Usuario user)
+        {
+            // 1 - Abrir conexão
+            MySqlConnection Conexao = new MySqlConnection(DadosConexao);
+
+            Conexao.Open();
+
+            // 2 - Informando uma query do objeto conexão
+            String Query = "DELETE FROM Usuario WHERE Id=@Id";
+            MySqlCommand comando = new MySqlCommand(Query, Conexao);
+
+            // 3 - Trata do SQL INJECTION
+            // substituir o valor informado na variável Id
+            // validar internamente se o que está sendo passado não é mal intensionado(SQL INJECTION)
+            comando.Parameters.AddWithValue("@Id", user.Id);
+
+            // 4 - Executar no Banco de dados
+            comando.ExecuteNonQuery();
+
+            // 5 - Fechar o Banco de dados
+            Conexao.Close();
+
+        }
+
+        public Usuario QueryLogin(Usuario user)
         {
             MySqlConnection Conexao = new MySqlConnection(DadosConexao);
 
@@ -52,8 +97,8 @@ namespace ATIV_02.Models
 
             String Query = "SELECT * FROM Usuario WHERE Login = @Login AND Senha = @Senha";
             MySqlCommand comando = new MySqlCommand(Query, Conexao);
-            comando.Parameters.AddWithValue("@Login", u.Login);
-            comando.Parameters.AddWithValue("@Senha", u.Senha);
+            comando.Parameters.AddWithValue("@Login", user.Login);
+            comando.Parameters.AddWithValue("@Senha", user.Senha);
             MySqlDataReader reader = comando.ExecuteReader();
             Usuario usr = null;
             if(reader.Read())
@@ -117,6 +162,50 @@ namespace ATIV_02.Models
             Conexao.Close();
 
             return ListaDeUsuarios;
+        }
+        public Usuario BuscarPorId(int Id)
+        {
+            MySqlConnection Conexao = new MySqlConnection(DadosConexao);
+
+            Conexao.Open();
+
+            Usuario usuarioEncontrado = new Usuario();
+
+            String Query = "SELECT * FROM Usuario WHERE Id=@Id";
+
+            MySqlCommand comando = new MySqlCommand(Query, Conexao);
+
+            comando.Parameters.AddWithValue("@Id", Id);
+
+            MySqlDataReader Reader = comando.ExecuteReader();
+
+            if(Reader.Read())
+            {
+                usuarioEncontrado.Id = Reader.GetInt32("Id");
+
+                if (!Reader.IsDBNull(Reader.GetOrdinal("Nome")))
+                {
+                    usuarioEncontrado.Nome = Reader.GetString("Nome");
+                }
+
+                if (!Reader.IsDBNull(Reader.GetOrdinal("Login")))
+                {
+                    usuarioEncontrado.Login = Reader.GetString("Login");
+                }
+
+                if (!Reader.IsDBNull(Reader.GetOrdinal("Senha")))
+                {
+                    usuarioEncontrado.Senha = Reader.GetString("Senha");
+                }
+                
+                usuarioEncontrado.DataNasc = Reader.GetDateTime("DataNasc");
+
+            }
+
+            Conexao.Close();
+
+            return usuarioEncontrado;  
+
         }
 
     }

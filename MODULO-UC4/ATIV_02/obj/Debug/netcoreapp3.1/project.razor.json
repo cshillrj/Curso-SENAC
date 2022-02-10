@@ -14402,6 +14402,11 @@
   "RootNamespace": "ATIV_02",
   "Documents": [
     {
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\Usuario\\Atualizar.cshtml",
+      "TargetPath": "Views\\Usuario\\Atualizar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\Usuario\\Login.cshtml",
       "TargetPath": "Views\\Usuario\\Login.cshtml",
       "FileKind": "mvc"

@@ -4,6 +4,8 @@
 }
 <h2>Login</h2>
 
+<p class="text-danger">@ViewData["mensagem"]</p>
+
 <form asp-action="Login" method="POST">
     <p>
         <label asp-for="Login">Login:</label>
@@ -16,6 +18,4 @@
     <p>
         <input type="submit" value="Entrar" />
     </p>
-    <br>
-    <p id="pMensagem">@ViewBag.Mensagem</p>
 </form>

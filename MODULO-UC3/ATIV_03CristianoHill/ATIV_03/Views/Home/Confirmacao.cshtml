@@ -1,0 +1,15 @@
+@model List<Dados>
+
+
+@foreach (Dados dados in Model)
+{
+    <p>
+        Nome: @dados.Nome <br>
+        Telefone: @dados.Telefone <br>
+        Data: @dados.Data <br>
+        Animal: @dados.Animal <br>
+        Necessidade: @dados.Necessidade <br>
+    </p>
+
+    <a class="voltar" asp-area="" asp-controller="Home" asp-action="Agendamento">Voltar para Agendamento</a>
+}

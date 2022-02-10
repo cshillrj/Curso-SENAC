@@ -1,0 +1,52 @@
+@model Cadastro
+
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class = "CadastroCliente">
+    <h2>Cadastro:</h2>
+    <form method = "POST" asp-action="CadastroCliente">
+        <p>
+            <label>Nome: </label>
+            <input asp-for = "Nome" >
+        </p>
+        <p>
+            <label>CPF: </label>
+            <input asp-for = "Cpf">
+        </p>
+        <p>
+            <label>E-mail: </label>
+            <input asp-for = "Email">
+        </p>
+        <p>
+            <label>Telefone: </label>
+            <input asp-for = "Telefone">
+        </p>
+        <p>
+            <label>Data de Nascimento: </label>
+            <input type="Date" asp-for = "DataNascimento">
+        </p>
+        <p>
+            <label>Endereço: </label>
+            <input asp-for = "Endereco">
+        </p>
+        <p>
+            <label>Bairro: </label>
+            <input asp-for = "Bairro">
+        </p>
+        <p>
+            <label>Cidade: </label>
+            <input asp-for = "Cidade">
+        </p>
+        <p>
+            <label>Senha: </label>
+            <input type="password" asp-for = "Senha">
+        </p>
+
+        <input class="botao" type = "submit" value = "Cadastrar">
+        <br>
+        <label class="checkbox"><input type="checkbox" checked required>Gostaria de receber nossas novidades por e-mail?</label>
+
+    </form>
+</div>
