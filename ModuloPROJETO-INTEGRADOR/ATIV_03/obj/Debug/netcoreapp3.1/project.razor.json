@@ -14417,13 +14417,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\ModuloPROJETO-INTEGRADOR\\ATIV_03\\Views\\Home\\Index_old.cshtml",
-      "TargetPath": "Views\\Home\\Index_old.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\ModuloPROJETO-INTEGRADOR\\ATIV_03\\Views\\Home\\FaleConosco.cshtml",
+      "TargetPath": "Views\\Home\\FaleConosco.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\ModuloPROJETO-INTEGRADOR\\ATIV_03\\Views\\Home\\FaleConosco.cshtml",
-      "TargetPath": "Views\\Home\\FaleConosco.cshtml",
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\ModuloPROJETO-INTEGRADOR\\ATIV_03\\Views\\Home\\Confirmacao.cshtml",
+      "TargetPath": "Views\\Home\\Confirmacao.cshtml",
       "FileKind": "mvc"
     },
     {

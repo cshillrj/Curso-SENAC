@@ -1,0 +1,40 @@
+@model List<Cadastro>
+
+
+<table class="table">
+        <thead>
+            <tr>
+                
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>DataNascimento</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Senha</th>
+                
+            </tr>
+        </thead>
+
+            @foreach (Cadastro dados in Model)
+            {
+                <tr>
+                    
+                    <td>@dados.Nome</td>
+                    <td>@dados.Cpf</td>
+                    <td>@dados.Email</td>
+                    <td>@dados.Telefone</td>
+                    <td>@dados.DataNascimento</td>
+                    <td>@dados.Endereco</td>
+                    <td>@dados.Bairro</td>
+                    <td>@dados.Cidade</td>
+                    <td>@dados.Senha</td>
+                    
+                </tr>
+            }
+        <tbody>
+        
+        </tbody>
+    </table>

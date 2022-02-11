@@ -23,7 +23,6 @@ C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcorea
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\FaleConosco.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Galeria.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index_old.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Pedido.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\SaibaMais.cshtml.g.cs
@@ -44,3 +43,4 @@ C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcorea
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\RecArtigos.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Feedback.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\CadastroCliente.cshtml.g.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\ModuloPROJETO-INTEGRADOR\ATIV_03\obj\Debug\netcoreapp3.1\Razor\Views\Home\Confirmacao.cshtml.g.cs

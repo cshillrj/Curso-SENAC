@@ -53,6 +53,16 @@ namespace ATIV_03.Controllers
             return View();
         }
 
+        [HttpPost]
+
+        public IActionResult CadastroCliente(Cadastro dados)
+        {
+            AgendaCadastro.Incluir(dados);
+            ViewData["mensagem"] = "Usuário cadastrado com sucesso.";
+            return View();
+
+        }
+
         public IActionResult FaleConosco()
         {
             return View();
@@ -63,12 +73,19 @@ namespace ATIV_03.Controllers
         public IActionResult FaleConosco(Dados dados)
         {
             Agenda.Incluir(dados);
+            ViewData["mensagem"] = "Agradecemos seu contato.";
             return View();
         }
 
         public IActionResult Feedback()
         {
             List<Dados> Dados = Agenda.Listar();
+            return View(Dados);
+        }
+
+        public IActionResult Confirmacao()
+        {
+            List<Cadastro> Dados = AgendaCadastro.Listar();
             return View(Dados);
         }
 
