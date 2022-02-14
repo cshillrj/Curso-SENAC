@@ -38,3 +38,6 @@ C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Vi
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\CadastroUsuario.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Login.cshtml.g.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\Usuario\Atualizar.cshtml.g.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\Atualizar.cshtml.g.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\CadastroPacotes.cshtml.g.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC4\ATIV_02\obj\Debug\netcoreapp3.1\Razor\Views\PacotesTuristicos\Lista.cshtml.g.cs

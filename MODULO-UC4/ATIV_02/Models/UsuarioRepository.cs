@@ -39,6 +39,7 @@ namespace ATIV_02.Models
             comando.Parameters.AddWithValue("@Login", novoUsuario.Login);
             comando.Parameters.AddWithValue("@Senha", novoUsuario.Senha);
             comando.Parameters.AddWithValue("@DataNasc", novoUsuario.DataNasc);
+            
             comando.ExecuteNonQuery();
 
             Conexao.Close();

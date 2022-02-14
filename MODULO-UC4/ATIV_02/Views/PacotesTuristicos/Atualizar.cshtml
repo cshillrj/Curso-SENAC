@@ -1,0 +1,44 @@
+@model PacotesTuristicos
+
+@{
+    ViewData["Title"] = "Alteração";
+}
+
+<p class="text-danger">@ViewData["mensagem"]</p>
+
+<form asp-action="Atualizar" method="POST">
+
+    <p>
+        <label asp-for="Nome">Nome:</label>
+        <input asp-for="Nome" />
+    </p>
+    <p>
+        <label asp-for="Origem">Origem:</label>
+        <input asp-for="Origem" />
+    </p>
+    <p>
+        <label asp-for="Destino">Destino:</label>
+        <input asp-for="Destino" />
+    </p>
+    <p>
+        <label asp-for="Atrativos">Atrativos:</label>
+        <input asp-for="Atrativos" />
+    </p>
+    <p>
+        <label asp-for="Saida">Saida:</label>
+        <input asp-for="Saida" type="date"/>
+    </p>
+    <p>
+        <label asp-for="Retorno">Retorno:</label>
+        <input asp-for="Retorno" type="date"/>
+    </p>
+    <p>
+        <label asp-for="Usuario">Usuario:</label>
+        <input asp-for="Usuario" />
+    </p>
+    <p>
+        <input asp-for="Id" type="hidden">
+        <input type="submit" value="Atualizar" />
+    </p>
+    
+</form>

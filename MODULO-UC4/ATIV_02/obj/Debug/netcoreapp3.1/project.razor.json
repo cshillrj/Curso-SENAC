@@ -14412,8 +14412,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\PacotesTuristicos\\CadastroPacotes.cshtml",
+      "TargetPath": "Views\\PacotesTuristicos\\CadastroPacotes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\PacotesTuristicos\\Lista.cshtml",
+      "TargetPath": "Views\\PacotesTuristicos\\Lista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC4\\ATIV_02\\Views\\PacotesTuristicos\\Atualizar.cshtml",
+      "TargetPath": "Views\\PacotesTuristicos\\Atualizar.cshtml",
       "FileKind": "mvc"
     },
     {

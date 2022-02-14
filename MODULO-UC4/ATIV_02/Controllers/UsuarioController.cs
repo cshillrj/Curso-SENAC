@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using MySqlConnector;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using ATIV_02.Models;
 
 namespace ATIV_02.Controllers
@@ -16,7 +18,7 @@ namespace ATIV_02.Controllers
        public IActionResult Lista()
         {
             if(HttpContext.Session.GetInt32("Id") == null)
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "Usuario");
             UsuarioRepository ur = new UsuarioRepository();
             List<Usuario> lista = ur.Listar();
             return View(lista);
@@ -25,7 +27,7 @@ namespace ATIV_02.Controllers
         public IActionResult Excluir(int Id)
         {
             if(HttpContext.Session.GetInt32("Id") == null)
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "Usuario");
             UsuarioRepository ur = new UsuarioRepository();
             Usuario usuarioEncontrado = ur.BuscarPorId(Id);
             if(usuarioEncontrado.Id > 0)
@@ -35,14 +37,14 @@ namespace ATIV_02.Controllers
                 ViewData["mensagem"] = "Usuário não encontrado.";
             }
 
-            return RedirectToAction("Lista");
+            return RedirectToAction("Lista", "Usuario");
 
         }
 
         public IActionResult Atualizar(int Id)
         {
             if(HttpContext.Session.GetInt32("Id") == null)
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "Usuario");
             UsuarioRepository ur = new UsuarioRepository();
             Usuario usuarioEncontrado = ur.BuscarPorId(Id);
 
@@ -55,13 +57,13 @@ namespace ATIV_02.Controllers
             UsuarioRepository ur = new UsuarioRepository();
             ur.atualizar(usuario);
             
-            return RedirectToAction("Lista");
+            return RedirectToAction("Lista", "Usuario");
         }
 
         public IActionResult CadastroUsuario()
         {
             if(HttpContext.Session.GetInt32("Id") == null)
-                return RedirectToAction("Login");
+                return RedirectToAction("Login", "Usuario");
             return View();
         }
 
@@ -96,6 +98,13 @@ namespace ATIV_02.Controllers
                 ViewData["mensagem"] = "Falha no Login.";
                 return View();
             }
+        }
+
+        public IActionResult Logout(Usuario u)
+        {
+            HttpContext.Session.Clear();
+
+            return View("Login");
         }
     }            
 }
