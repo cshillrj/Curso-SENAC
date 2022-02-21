@@ -1,0 +1,24 @@
+@using System
+@using Microsoft.AspNetCore.Http
+
+@model Cliente
+@{
+    ViewData["Title"] = "Login";
+}
+<h2>Login</h2>
+
+<p class="text-danger">@ViewData["mensagem"]</p>
+
+<form asp-action="Login" method="POST">
+    <p>
+        <label asp-for="Email">Email:</label>
+        <input asp-for="Email" type="email" />
+    </p>
+    <p>
+        <label asp-for="Senha">Senha:</label>
+        <input asp-for="Senha" type="password" />
+    </p>
+    <p>
+        <input type="submit" value="Entrar" />
+    </p>
+</form>

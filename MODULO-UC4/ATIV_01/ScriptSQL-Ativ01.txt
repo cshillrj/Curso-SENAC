@@ -164,7 +164,7 @@ ALTER TABLE Pre_Agendamento DROP COLUMN FAX
 
 --------------------------------------------------------------------------------------
 
-DML -> Manulação de dados
+DML -> Manipulação de dados
 
 
 
@@ -208,7 +208,7 @@ DELETE FROM Pre_Agendamento WHERE Id=1
 
 
 
-REATE TABLE Pessoa(
+CREATE TABLE Pessoa(
 
   Id int(4) AUTO_INCREMENT,
 

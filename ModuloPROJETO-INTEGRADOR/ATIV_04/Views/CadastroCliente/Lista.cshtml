@@ -1,0 +1,46 @@
+@model List<Cliente>
+
+@{
+    ViewData["Title"] = "Lista de Clientes";
+}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Data de Nascimento</th>
+                <th>Endereço</th>
+                <th>Bairro</th>
+                <th>Cidade</th>
+                <th>Senha</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+
+            @foreach (Cliente cliente in Model)
+            {
+                <tr>
+                    <td>@cliente.Id</td>
+                    <td>@cliente.Nome</td>
+                    <td>@cliente.Cpf</td>
+                    <td>@cliente.Email</td>
+                    <td>@cliente.Telefone</td>
+                    <td>@cliente.DataNascimento</td>
+                    <td>@cliente.Endereco</td>
+                    <td>@cliente.Bairro</td>
+                    <td>@cliente.Cidade</td>
+                    <td>@cliente.Senha</td>
+                    <td>
+                       
+                </tr>
+            }
+        <tbody>
+        
+        </tbody>
+    </table>
+
+    

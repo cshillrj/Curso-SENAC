@@ -1,0 +1,30 @@
+@model Dados
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Fale Conosco - ";
+}
+
+<h2>Fale conosco</h2>
+    <p class="text-danger">@ViewData["mensagem"]</p>
+    <form asp-action="FaleConosco" method="POST">
+        <p>
+            <label asp-for="Nome">Nome</label>
+            <input asp-for="Nome">
+        </p>
+        <p>
+            <label asp-for="Email">E-mail</label>
+            <input asp-for="Email" type="email">
+        </p>
+        <p>
+            <label asp-for="Telefone">Telefone</label>
+            <input asp-for="Telefone" type="tel">
+        </p>
+        <p>    
+            <label asp-for="Mensagem">Sugestão / Reclamação / Elogio</label><br>
+            <textarea class="msgCliente" asp-for="Mensagem" cols="60" rows="10"></textarea>
+        </p>
+            <input type="checkbox" checked required>Gostaria de receber nossas novidades por e-mail?
+            <br>
+            <input type="submit" value="Enviar" />
+    </form>

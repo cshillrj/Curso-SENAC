@@ -1,0 +1,52 @@
+@model Cliente
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Cadastro de Clientes";
+}
+
+<p class="text-danger">@ViewData["mensagem"]</p>
+
+<h2>Cadastro</h2>
+
+<form asp-action="CadastroCliente" method="POST">
+    <p>
+        <label asp-for="Nome">Nome:</label>
+        <input asp-for="Nome" />
+    </p>
+    <p>
+        <label asp-for="Cpf">CPF:</label>
+        <input asp-for="Cpf" />
+    </p>
+    <p>
+        <label asp-for="Email">Email:</label>
+        <input asp-for="Email" />
+    </p>
+    <p>
+        <label asp-for="Telefone">Telefone:</label>
+        <input asp-for="Telefone" />
+    </p>
+    <p>
+        <label asp-for="DataNascimento">DataNascimento:</label>
+        <input asp-for="DataNascimento" type="date"/>
+    </p>
+    <p>
+        <label asp-for="Endereco">Endereco:</label>
+        <input asp-for="Endereco" />
+    </p>
+    <p>
+        <label asp-for="Bairro">Bairro:</label>
+        <input asp-for="Bairro" />
+    </p>
+    <p>
+        <label asp-for="Cidade">Cidade:</label>
+        <input asp-for="Cidade" />
+    </p>
+    <p>
+        <label asp-for="Senha">Senha:</label>
+        <input asp-for="Senha" type="password" />
+    </p>
+    <p>
+        <input type="submit" value="Cadastrar" />
+    </p>
+</form>
