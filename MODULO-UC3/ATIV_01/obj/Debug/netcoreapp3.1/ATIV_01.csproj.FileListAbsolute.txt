@@ -11,3 +11,16 @@ C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.cs
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.dll
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.pdb
 C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-C\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.genruntimeconfig.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.exe
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.deps.json
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.runtimeconfig.json
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.runtimeconfig.dev.json
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\bin\Debug\netcoreapp3.1\ATIV_01.pdb
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.csprojAssemblyReference.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.AssemblyInfoInputs.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.AssemblyInfo.cs
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.csproj.CoreCompileInputs.cache
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.dll
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.pdb
+C:\MEUS ARQUIVOS\Curso-SENAC\MODULO-UC3\ATIV_01\obj\Debug\netcoreapp3.1\ATIV_01.genruntimeconfig.cache

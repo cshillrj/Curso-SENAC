@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-C\\ATIV_01\\ATIV_01.csproj",
+      "projectUniqueName": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC3\\ATIV_01\\ATIV_01.csproj",
       "projectName": "ATIV_01",
-      "projectPath": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-C\\ATIV_01\\ATIV_01.csproj",
+      "projectPath": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC3\\ATIV_01\\ATIV_01.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-      "outputPath": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-C\\ATIV_01\\obj\\",
+      "outputPath": "C:\\MEUS ARQUIVOS\\Curso-SENAC\\MODULO-UC3\\ATIV_01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config"
